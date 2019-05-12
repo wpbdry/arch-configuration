@@ -27,7 +27,3 @@ then
 	echo 'Thank you!'
 	exit 0
 fi
-
-# Start SSH agent
-
-~/startup/sshsetup.sh
