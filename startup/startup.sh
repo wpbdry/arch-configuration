@@ -1,4 +1,11 @@
+#
+# ~/startup/startup.sh
+#
+
 #!/bin/bash
+
+# Mount MacOS partition
+~/startup/mountmacos.sh
 
 # Welcome message
 echo "Welcome to setup. Type 'exit' to not do this now."
