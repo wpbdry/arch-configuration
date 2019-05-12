@@ -15,8 +15,5 @@ alias poweroff='systemctl poweroff'
 alias suspend='systemctl suspend'
 alias hibernate='systemctl hibernate'
 
-# Mount Apple disk
-#sudo apfs-fuse -o allow_other /dev/sda2 /MacOS
-
 # My scripts
 ~/startup/startup.sh
