@@ -2,10 +2,20 @@
 # everything except specific configuration files.
 *
 
-# Don't ignore files for this repo
+# #######################################
+# FILES I WANT TO TRACK
+# #######################################
+
+# Files for this repo
 !.gitignore
 !README.md
 
 # Bash configuration
 !.bash_profile
 !.bashrc
+
+# #######################################
+# #######################################
+
+# Make sure to definitely ignore sesitive files
+.ssh/*
