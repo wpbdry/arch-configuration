@@ -1,0 +1,10 @@
+# This is my home directory so I would like to ignore
+# everything except specific configuration files.
+*
+
+# Don't ignore gitignore
+!.gitignore
+
+# Bash configuration
+!.bash_profile
+!.bashrc
