@@ -2,8 +2,9 @@
 # everything except specific configuration files.
 *
 
-# Don't ignore gitignore
+# Don't ignore files for this repo
 !.gitignore
+!README.md
 
 # Bash configuration
 !.bash_profile
