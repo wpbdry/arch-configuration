@@ -10,3 +10,6 @@ PS1='[\u@\h \W]\$ '
 
 # My aliases
 alias lsblk='lsblk -o NAME,FSUSED,SIZE,FSTYPE,PATH,MOUNTPOINT,UUID'
+
+# My scripts
+~/startup/startup.sh
