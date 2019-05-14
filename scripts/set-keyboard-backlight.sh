@@ -1,11 +1,11 @@
 #
-# ~/scripts/set-screen-brightness.sh
+# ~/scripts/set-keyboard-backlight.sh
 #
 
 #!/bin/bash
 
 # Get real path of file which controls screen brightness
-symlink='/sys/class/backlight/intel_backlight'
+symlink='/sys/class/leds/smc::kbd_backlight'
 dir=$(readlink -f $symlink)
 
 # Check max brightness
@@ -15,7 +15,7 @@ max_brightness=$(cat $dir/max_brightness)
 if [ "$#" -eq 0 ]
 then
 	current_brightness=$(cat $dir/brightness)
-	echo 'Current birghtness:' $current_brightness/$max_brightness
+	echo 'Current backlight' $current_brightness/$max_brightness
 
 # If one param passed, set brightness, after checking that it's less than max
 elif [ "$#" -eq 1 ]
@@ -30,6 +30,6 @@ then
 # If more params passed, print usage message
 else
 	echo 'Usage:'
-	echo 'Find out current brightness: `~/scripts/set-screen-brightness`'
-	echo 'Set new brightness: `~/scripts/set-screen-brightness <brightness>`'
+	echo 'Find out current backlight: `~/scripts/set-keyboard-backlight`'
+	echo 'Set new backlight: `~/scripts/set-keyboard-backlight <backlight>`'
 fi
