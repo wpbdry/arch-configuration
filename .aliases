@@ -1,0 +1,17 @@
+#
+# ~/.aliases
+#
+
+# ls
+alias ls='ls --color=auto'
+
+# lsblk
+alias lsblk='lsblk -o NAME,FSUSED,SIZE,FSTYPE,PATH,MOUNTPOINT,UUID'
+
+# systemctl
+alias reboot='systemctl reboot'
+alias poweroff='systemctl poweroff'
+alias shutdown='systemctl poweroff'
+alias suspend='systemctl suspend'
+alias sleep='systemctl suspend'
+alias hibernate='systemctl hibernate'

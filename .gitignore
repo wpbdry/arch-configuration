@@ -1,3 +1,7 @@
+#
+# ~/.gitignore
+#
+
 # This is my home directory so I would like to ignore
 # everything except specific configuration files.
 *
@@ -13,6 +17,9 @@
 # Bash configuration
 !.bash_profile
 !.bashrc
+!.profile
+!.aliases
+!.bash_aliases
 
 # Startup script
 !startup/
