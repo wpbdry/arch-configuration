@@ -12,3 +12,6 @@
 
 # My aliases
 . ~/.aliases
+
+# My scripts
+PATH=$PATH:~/bin
