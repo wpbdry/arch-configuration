@@ -13,6 +13,7 @@
 # Files for this repo
 !.gitignore
 !README.md
+!.gitconfig
 
 # Bash configuration
 !.bash_profile

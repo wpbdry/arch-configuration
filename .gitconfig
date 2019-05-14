@@ -1,0 +1,5 @@
+[user]
+	email = wpbdry@gmail.com
+	name = William Dry
+[credential]
+	helper = cache --timeout=3600
