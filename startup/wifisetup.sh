@@ -2,8 +2,6 @@
 # ~/startup/wifisetup.sh
 #
 
-#!/bin/bash
-
 # All wifi configuration files are named like *-wifi
 # Wifi configuration files are in /etc/netctl
 

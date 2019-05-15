@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# Get real path of file which controls screen brightness
+# 
+# ~/bin/backlight
+#
+
+# Get real path of file which controls keyboard backlight
 symlink='/sys/class/leds/smc::kbd_backlight'
 dir=$(readlink -f $symlink)
 

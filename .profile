@@ -8,7 +8,7 @@
 # Additionally, the line `. ~/.profile` should be run by every shell
 
 # My startup scripts
-~/startup/startup.sh
+. ~/startup/startup.sh
 
 # My aliases
 . ~/.aliases

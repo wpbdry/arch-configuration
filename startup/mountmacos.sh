@@ -2,8 +2,6 @@
 # ~/startup/mountmacos.sh
 #
 
-#!/bin/bash
-
 # Settings
 partition_id='39ff1bc9-2aa6-42aa-8596-a3323a50f1be'
 mountpoint='/MacOS'

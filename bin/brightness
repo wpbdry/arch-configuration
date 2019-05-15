@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# ~/bin/brightness
+#
+
 # Get real path of file which controls screen brightness
 symlink='/sys/class/backlight/intel_backlight'
 dir=$(readlink -f $symlink)
