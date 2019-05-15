@@ -14,6 +14,6 @@ Intel Iris Graphics 6100 1536 MB
 ```bash
 cd ~
 git init
-git remote add origin https://github.com/wpbdry/arch-configuration
+git remote add origin https://wpbdry@github.com/wpbdry/arch-configuration
 git pull
 ```
