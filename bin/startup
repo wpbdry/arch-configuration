@@ -6,7 +6,7 @@
 echo 'Setting some things up...'
 
 # Mount MacOS partition
-. ~/startup/mountmacos.sh
+. ~/bin/helper_scripts/mount_macos.sh
 
 # Connect to wifi
-. ~/startup/wifisetup.sh
+. ~/bin/helper_scripts/wifi_setup.sh

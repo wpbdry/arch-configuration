@@ -1,5 +1,5 @@
 #
-# ~/startup/mountmacos.sh
+# ~/bin/helper_scripts/mount_macos.sh
 #
 
 # Settings
