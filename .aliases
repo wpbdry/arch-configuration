@@ -15,3 +15,6 @@ alias shutdown='systemctl poweroff'
 alias suspend='systemctl suspend'
 alias sleep='systemctl suspend'
 alias hibernate='systemctl hibernate'
+
+# pacman
+alias pacman='sudo pacman'
