@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#
+# ~/bin/start_chromium_in_x
+#
+
+# Settings
+x_out=/home/william/.xorg_server.stdout.log
+x_err=/home/william/.xorg_server.stderr.log
+chrm_out=/home/william/.chromium.stdout.log
+chrm_err=/home/william/.chromium.stderr.log
+
+# Print date to all log files
+string="------------\nStarting new x server and chromium instance\n$(date)\n"
+echo -e $string | tee -a $x_out $x_err $chrm_out 1>> $chrm_err
+
+# Start X server
+sudo X 1>> x_out 2>> x_err &
+
+# Start chromium
+DISPLAY=:0 chromium --window-position=0,0 --window-size=2560,1600 1>> chrm_out 2>> chrm_err &
