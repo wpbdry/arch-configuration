@@ -1,5 +1,5 @@
 #
-# ~/vin/helper_scripts/wifi_setup.sh
+# ~/bin/helper_scripts/wifi_setup.sh
 #
 
 # All wifi configuration files are named like *-wifi
