@@ -21,7 +21,11 @@ then
 # If one user param passed, set brightness, after checking that it's less than max
 elif [ "$#" -eq 1 ]
 then
-	if [ $1 -le $max_brightness ]
+	# Check for 'max'
+	if [ $1 == 'max' ]
+	then
+		echo $max_brightness >> $dir/brightness
+	elif [ $1 -le $max_brightness ]
 	then
 		echo $1 >> $dir/brightness
 	else
