@@ -9,4 +9,4 @@ symlink='/sys/class/leds/smc::kbd_backlight'
 setting_name='keyboard backlight'
 
 # Source helper file
-. ./helper_scripts/set_brightness.sh
+. /home/william/bin/helper_scripts/set_brightness.sh

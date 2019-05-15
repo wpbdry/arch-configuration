@@ -17,3 +17,11 @@ git init
 git remote add origin https://wpbdry@github.com/wpbdry/arch-configuration
 git pull
 ```
+
+Some scripts, which need helper scripts and which need to be able to be run with sudo,
+contain hard coded absolute paths.
+If your username is not william, please change lines in
+```
+~/bin/brightness
+~/bin/backlight
+```
