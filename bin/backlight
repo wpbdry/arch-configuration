@@ -1,7 +1,3 @@
-#
-# ~/scripts/set-keyboard-backlight.sh
-#
-
 #!/bin/bash
 
 # Get real path of file which controls screen brightness
