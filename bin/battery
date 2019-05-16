@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#
+# ~/bin/battery
+#
+
+# Get current battery status
+
+symlink=/sys/class/power_supply/BAT0
+
+capacity=$(cat $symlink/capacity)
+status=$(cat $symlink/status)
+
+echo 'Current battery status: '$capacity'% '$status'.'
