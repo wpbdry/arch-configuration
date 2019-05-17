@@ -23,4 +23,11 @@ alias volume='amixer set Master'
 alias chromium='start_chromium_in_x'
 
 # Git
+alias gadd='git add'
+alias gcommit='git commit'
+alias gpush='git push'
+alias gpull='git pull'
+alias gstatus='git status'
+alias gdiff='git diff'
 alias gauto='git_auto'
+alias glog='git log --graph'
