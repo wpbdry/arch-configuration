@@ -26,3 +26,7 @@ If your username is not william, please change lines in
 ~/bin/brightness
 ~/bin/backlight
 ```
+
+Some config files are not stored in the home directory.
+These have been copied into ~/other_config_files/
+You will need to copy each one individually into its correct location.
