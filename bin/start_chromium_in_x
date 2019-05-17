@@ -14,8 +14,8 @@ chrm_err=/home/william/.chromium.stderr.log
 string="------------\nStarting new x server and chromium instance\n$(date)\n"
 echo -e $string | tee -a $x_out $x_err $chrm_out 1>> $chrm_err
 
-# Start X server
-sudo X 1>> x_out 2>> x_err &
+# Start X server as sudo
+sudo X 1>> $x_out 2>> $x_err &
 
-# Start chromium
-DISPLAY=:0 chromium --window-position=0,0 --window-size=2560,1600 1>> chrm_out 2>> chrm_err &
+# Start chromium (we don't want to start chromium as sudo)
+DISPLAY=:0 chromium --window-position=0,0 --window-size=2560,1600 1>> $chrm_out 2>> $chrm_err &
