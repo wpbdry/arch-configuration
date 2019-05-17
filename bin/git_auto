@@ -4,7 +4,7 @@
 # ~/bin/git_auto
 #
 
-git add .
+git add -Av
 git commit -m "$1"
 git pull
 git push
