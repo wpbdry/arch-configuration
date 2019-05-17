@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#
+# ~/bin/download_make_install_aur_packages
+#
+# This script will download and install packages from the AUR
+# without giving you a chance to inspect the code first.
+# Only run on packages you trust
+#
+# Expects one parameter.
+# Please pass the last part of the Git Clone URL from AUR, excluding .git
+# If the Git Clone URL is https://aur.archlinux.org/foo.git, pass only "foo". We do the rest.
+
+pac_name=$1
+pac_dir=$HOME/Downloads/$pac_name
+
+# Download package
+url=https://aur.archlinux.org/$pac_name.git
+rm -rf $pac_dir
+git clone $url $pac_dir
+
+# Build package
+cd $pac_dir
+makepkg -scf
+
+#Install the package
+tar_name=$(find $pac_dir/*.tar.xz)  # Assumes only one .tar.xz file
+sudo pacman -U $tar_name

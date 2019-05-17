@@ -32,3 +32,6 @@ alias gdiff='git diff'
 alias gauto='git_auto'
 alias glog='git log --graph'
 alias gclone='git clone'
+
+# Package installation
+alias aur='download_make_install_aur_packages'
