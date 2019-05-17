@@ -4,4 +4,7 @@
 # ~/bin/git_auto
 #
 
-git add $PWD/. && git commit -m "$1" && git pull && git push
+git add .
+git commit -m "$1"
+git pull
+git push
