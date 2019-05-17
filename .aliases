@@ -24,3 +24,6 @@ alias volume='amixer set Master'
 
 # Chromium
 alias chromium='start_chromium_in_x'
+
+# Git
+alias gauto='git_auto'

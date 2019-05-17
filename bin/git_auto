@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#
+# ~/bin/git_auto
+#
+
+git add $PWD/. && git commit -m "$1" && git pull && git push
