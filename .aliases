@@ -18,6 +18,7 @@ alias hibernate='systemctl hibernate'
 
 # volume
 alias volume='amixer set Master'
+alias mixer='alsamixer'
 
 # Chromium
 alias chromium='start_chromium_in_x'
