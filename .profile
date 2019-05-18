@@ -15,3 +15,6 @@
 
 # My scripts
 PATH=$PATH:~/bin
+
+# PROMPT_COMMAND: Keep my own log of all shell commands
+export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/shell_logs/shell_history_$(date "+%Y-%m-%d").log; fi'
