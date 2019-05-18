@@ -25,7 +25,7 @@ alias chromium='start_chromium_in_x'
 
 # Git
 alias gadd='git add'
-alias gcommit='git commit'
+alias gcommit='git commit -m'
 alias gpush='git pull && git push'
 alias gpull='git pull'
 alias gstatus='git status'
