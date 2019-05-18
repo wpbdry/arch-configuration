@@ -5,10 +5,10 @@
 #
 
 # Settings
-x_out=$HOME/.xorg_server.stdout.log
-x_err=$HOME/.xorg_server.stderr.log
-chrm_out=$HOME/.chromium.stdout.log
-chrm_err=$HOME/.chromium.stderr.log
+x_out=$HOME/.logs/xorg_server.stdout.log
+x_err=$HOME/.logs/xorg_server.stderr.log
+chrm_out=$HOME/.logs/chromium.stdout.log
+chrm_err=$HOME/.logs/chromium.stderr.log
 
 # Print date to all log files
 string="------------\nStarting new x server and chromium instance\n$(date)\n"
